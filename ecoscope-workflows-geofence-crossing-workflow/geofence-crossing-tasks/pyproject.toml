@@ -3,10 +3,7 @@ name = "geofence-crossing-tasks"
 version = "0.1.0"
 description = "Custom tasks for the geofence crossing workflow"
 requires-python = ">=3.11"
-dependencies = ["wt-registry"]
-
-[project.entry-points."wt_registry"]
-geofence_crossing_tasks = "geofence_crossing_tasks"
+dependencies = []
 
 [build-system]
 requires = ["hatchling"]

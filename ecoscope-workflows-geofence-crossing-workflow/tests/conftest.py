@@ -48,7 +48,7 @@ TEST_CASES_YAML = ARTIFACTS.parent / "test-cases.yaml"
 MATCHSPEC_OVERRIDE = "ecoscope-workflows-geofence-crossing-workflow"
 IO_TASKS_IMPORTABLE_REFERENCES = [
     "ecoscope_workflows_ext_ecoscope.tasks.io.get_subjectgroup_observations",
-    "geofence_crossing_tasks.load_spatial_features_group",
+    "ecoscope_workflows_ext_ecoscope.tasks.io.load_spatial_features_group",
 ]
 
 yaml = ruamel.yaml.YAML(typ="safe")

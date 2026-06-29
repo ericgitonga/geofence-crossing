@@ -45,10 +45,8 @@ from ecoscope_workflows_core.tasks.transformation import (
     convert_values_to_timezone as convert_values_to_timezone,
 )
 from ecoscope_workflows_core.tasks.transformation import map_columns as map_columns
-from ecoscope_workflows_ext_custom.tasks.results import (
+from geofence_crossing_tasks import (
     combine_map_layers as combine_map_layers,
-)
-from ecoscope_workflows_ext_custom.tasks.spatial_ops import (
     detect_geofence_crossings as detect_geofence_crossings,
 )
 from ecoscope_workflows_ext_ecoscope.tasks.io import (
