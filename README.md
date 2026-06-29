@@ -19,7 +19,7 @@ Detects when tracked subject trajectories cross a geofence boundary and displays
 
 ## Documentation
 
-For full configuration reference, methodology, and troubleshooting see the [Technical Guide](technical_guide/geofence_crossing_technical_guide.pdf).
+For full configuration reference, methodology, and troubleshooting see the [Technical Guide](docs/geofence_crossing_technical_guide.pdf).
 
 ## Development
 
