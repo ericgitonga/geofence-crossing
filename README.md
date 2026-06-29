@@ -1,6 +1,6 @@
 # Geofence Crossing Workflow
 
-**Version 0.1.0** · Works on Ecoscope Desktop (Windows and macOS) and Ecoscope Web
+**Version 0.2.0** · Works on Ecoscope Desktop (Windows and macOS) and Ecoscope Web
 
 Detects when tracked subject trajectories cross a geofence boundary and displays the crossing events on an interactive map and table, coloured by direction (green = inward, red = outward).
 
