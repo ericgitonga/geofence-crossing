@@ -378,7 +378,7 @@
         "title": {
           "default": null,
           "title": "Title",
-          "type": "string",
+          "anyOf": [{"type": "string"}, {"type": "null"}],
           "description": "            The map title. Note this is the title drawn on the map canvas itself, and will result\n            in duplicate titles if set in the context of a dashboard in which the iframe/widget\n            container also has a title set on it.\n            ",
           "ecoscope:advanced": true
         }
@@ -534,7 +534,7 @@
           "description": "Layer name (only applicable to geopackage files)",
           "ecoscope:advanced": true,
           "title": "Layer",
-          "type": "string"
+          "anyOf": [{"type": "string"}, {"type": "null"}]
         }
       },
       "required": [
@@ -561,7 +561,7 @@
           "description": "Layer name (only applicable for geopackage files)",
           "ecoscope:advanced": true,
           "title": "Layer",
-          "type": "string"
+          "anyOf": [{"type": "string"}, {"type": "null"}]
         }
       },
       "required": [
