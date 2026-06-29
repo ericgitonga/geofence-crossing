@@ -1,0 +1,23 @@
+base:
+  name: Base Test Case
+  mock_io: true
+  params:
+    workflow_details:
+      name: "Geofence Crossing"
+      description: "Detect subject track crossings of a geofence boundary"
+    time_range:
+      since: "2024-01-01T00:00:00Z"
+      until: "2024-01-31T23:59:59Z"
+    er_client_name:
+      data_source:
+        name: "mep-dev"
+    subject_obs:
+      subject_group_name: "All Subjects"
+    roi:
+      config:
+        source: "remote_file"
+        url: "https://storage.googleapis.com/ecoscope-public/roi/test_roi.gpkg"
+        name_column: "name"
+    groupers:
+      groupers:
+        - "index_name": "groupby_col"

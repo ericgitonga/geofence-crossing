@@ -1,0 +1,24 @@
+[
+    {
+        "i": "0",
+        "x": 0,
+        "y": 0,
+        "widget_id": 0,
+        "w": 10,
+        "h": 14,
+        "minW": 5,
+        "minH": 10,
+        "static": false
+    },
+    {
+        "i": "1",
+        "x": 0,
+        "y": 14,
+        "widget_id": 1,
+        "w": 10,
+        "h": 8,
+        "minW": 5,
+        "minH": 6,
+        "static": false
+    }
+]

@@ -1,0 +1,14 @@
+name: Geofence Crossing
+
+author:
+  - name: ""
+    organization: "EarthRanger"
+    email: "gitonga@earthranger.com"
+
+description: Detect when subject tracks cross a geofence boundary. Colors crossing points green (inward) or red (outward) and displays them on a map alongside the ROI boundary. A table lists each crossing with time, direction, subject, and coordinates.
+
+theory: ""
+
+output_comment: ""
+
+citation: []
