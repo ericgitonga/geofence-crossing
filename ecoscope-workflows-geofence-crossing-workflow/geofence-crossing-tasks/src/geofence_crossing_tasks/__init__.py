@@ -5,18 +5,15 @@ from typing import Annotated, Any, List, Optional, Union
 
 import geopandas as gpd
 import pandas as pd
-from ecoscope_workflows_core.annotations import AnyGeoDataFrame
-from ecoscope_workflows_core.decorators import task
-from ecoscope_workflows_ext_ecoscope.tasks.results._ecomap import (
-    LayerDefinition,
-    TextLayerStyle,
-)
+from ecoscope.platform.annotations import AnyGeoDataFrame
+from ecoscope.platform.tasks.results._ecomap import LayerDefinition, TextLayerStyle
 from pydantic import Field
+from wt_registry import register
 
 logger = logging.getLogger(__name__)
 
 
-@task
+@register(description="Detect points where tracked subject trajectories cross a geofence boundary, returning a GeoDataFrame of crossing events with direction (Inward/Outward) and timestamp.")
 def detect_geofence_crossings(
     trajectory: Annotated[
         AnyGeoDataFrame,
@@ -132,7 +129,7 @@ def detect_geofence_crossings(
     return cast(AnyGeoDataFrame, result)
 
 
-@task
+@register(description="Combine a static ROI boundary layer with per-subject crossing point layers, placing text labels last for correct rendering order.")
 def combine_map_layers(
     static_layers: Annotated[
         Optional[
